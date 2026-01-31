@@ -42,7 +42,7 @@ const Footer = () => {
             </a>
             
             <a
-              href="mailto:william.aucique@example.com"
+              href="mailto:waucique@gmail.com"
               className="glass glass-hover rounded-full p-4 group"
               aria-label="Email"
             >
