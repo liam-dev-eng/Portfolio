@@ -34,7 +34,7 @@ const HeroSection = () => {
           </a>
           
           <a
-            href="https://www.linkedin.com/in/william-aucique"
+            href="https://www.linkedin.com/in/william-a-727687226/"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-violet-500 hover:bg-violet-600 rounded-lg px-8 py-4 flex items-center gap-3 text-lg font-medium min-w-[200px] justify-center transition-all duration-300 hover:scale-105 glow-violet group"
