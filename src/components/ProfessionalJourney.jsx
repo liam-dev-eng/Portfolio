@@ -1,6 +1,12 @@
 import React from 'react';
 import { Briefcase } from 'lucide-react';
 
+const colorMap = {
+  violet: { bg: 'bg-violet-500/20', text: 'text-violet-400', dot: 'bg-violet-500' },
+  purple: { bg: 'bg-purple-500/20', text: 'text-purple-400', dot: 'bg-purple-500' },
+  indigo: { bg: 'bg-indigo-500/20', text: 'text-indigo-400', dot: 'bg-indigo-500' },
+};
+
 const timeline = [
   {
     id: 1,
@@ -30,7 +36,7 @@ const timeline = [
 
 const ProfessionalJourney = () => {
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 relative">
+    <section id="journey" className="py-20 px-4 sm:px-6 lg:px-8 relative">
       <div className="max-w-6xl mx-auto">
         {/* Section Title */}
         <div className="text-center mb-16 fade-in-section">
@@ -60,8 +66,8 @@ const ProfessionalJourney = () => {
                 <div className={`flex ${index % 2 === 0 ? 'md:justify-end' : 'md:justify-start'} ml-16 md:ml-0`}>
                   <div className={`glass glass-hover rounded-2xl p-6 md:p-8 max-w-md ${index % 2 === 0 ? 'md:mr-12' : 'md:ml-12'}`}>
                     {/* Icon */}
-                    <div className={`w-12 h-12 rounded-lg bg-${item.color}-500/20 flex items-center justify-center mb-4 ${index % 2 === 0 ? 'md:ml-auto' : ''}`}>
-                      <Briefcase className={`w-6 h-6 text-${item.color}-400`} />
+                    <div className={`w-12 h-12 rounded-lg ${colorMap[item.color].bg} flex items-center justify-center mb-4 ${index % 2 === 0 ? 'md:ml-auto' : ''}`}>
+                      <Briefcase className={`w-6 h-6 ${colorMap[item.color].text}`} />
                     </div>
 
                     {/* Company */}
@@ -88,7 +94,7 @@ const ProfessionalJourney = () => {
 
                 {/* Timeline Dot */}
                 <div className="absolute left-8 md:left-1/2 top-0 md:top-1/2 transform -translate-x-1/2 md:-translate-y-1/2">
-                  <div className={`w-4 h-4 rounded-full bg-${item.color}-500 ring-4 ring-github-dark animate-pulse`}></div>
+                  <div className={`w-4 h-4 rounded-full ${colorMap[item.color].dot} ring-4 ring-github-dark animate-pulse`}></div>
                 </div>
               </div>
             ))}

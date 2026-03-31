@@ -1,5 +1,5 @@
 import React from 'react';
-import { Coffee, Globe, Container, Cloud, Cpu, TestTube2 } from 'lucide-react';
+import { Coffee, Container, Cloud, Cpu, TestTube2 } from 'lucide-react';
 
 const technologies = [
   {
@@ -11,7 +11,7 @@ const technologies = [
   {
     id: 2,
     name: 'Playwright',
-    icon: Globe,
+    icon: TestTube2,
     description: 'E2E Testing',
   },
   {
@@ -42,7 +42,7 @@ const technologies = [
 
 const TechStack = () => {
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 relative">
+    <section id="stack" className="py-20 px-4 sm:px-6 lg:px-8 relative">
       <div className="max-w-6xl mx-auto">
         {/* Section Title */}
         <div className="text-center mb-16 fade-in-section">

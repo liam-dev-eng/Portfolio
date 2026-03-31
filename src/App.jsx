@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import Nav from './components/Nav';
 import HeroSection from './components/HeroSection';
 import AIStrategySection from './components/AIStrategySection';
 import ProfessionalJourney from './components/ProfessionalJourney';
@@ -33,6 +34,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-github-dark text-white">
+      <Nav />
       <HeroSection />
       <AIStrategySection />
       <ProfessionalJourney />
